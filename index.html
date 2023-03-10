@@ -13,28 +13,57 @@
 
 <div class="container" style="background-color: rgb(225, 207, 185);">
   <div class="my-3"><center><h1>Portfolio</h1></center></div>
-  <img id="img1" src="docs/assets/images/IMG_20220926_112320 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img2" src="docs/assets/images/IMG_20220926_112332 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <video class="embed-responsive-item rounded" width="425" height="auto" controls>
-    <source src="docs/assets/videos/paja1_2692022.mov" type="video/mp4">
-    Your browser does not support the video tag
-  </video>
-  <img id="img3" src="docs/assets/images/IMG_20221107_134957 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img4" src="docs/assets/images/IMG_20221230_111256 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img5" src="docs/assets/images/IMG_20221230_124149 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img6" src="docs/assets/images/IMG_20230102_105607 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img7" src="docs/assets/images/IMG_20230104_104738 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img8" src="docs/assets/images/IMG_20230113_093832 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img9" src="docs/assets/images/IMG_20230113_093947 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img10" src="docs/assets/images/IMG_20230113_155354 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img11" src="docs/assets/images/IMG_20230118_112253 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img12" src="docs/assets/images/IMG_20230203_094833 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img13" src="docs/assets/images/IMG_20230203_094853 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img14" src="docs/assets/images/IMG_20230213_135857 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img15" src="docs/assets/images/IMG_20230220_132926 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img16" src="docs/assets/images/IMG_20230309_104648 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
-  <img id="img17" src="docs/assets/images/IMG_20230309_104658 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto">
+  <img onclick="zoomIn(this.src)" id="img1" src="docs/assets/images/IMG_20220926_112320 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img2" src="docs/assets/images/IMG_20220926_112332 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <div class="video">
+    <img class="thumb" src="docs/assets/images/play.png">
+    <video class="embed-responsive-item rounded" width="425" height="auto" onclick="zoomVideo(this.src)" src="docs/assets/videos/paja1_2692022.mov" type="video/mp4" data-bs-toggle="modal" data-bs-target="#myVideoModal">
+  </div>
+  <img onclick="zoomIn(this.src)" id="img3" src="docs/assets/images/IMG_20221107_134957 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img4" src="docs/assets/images/IMG_20221230_111256 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img5" src="docs/assets/images/IMG_20221230_124149 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img6" src="docs/assets/images/IMG_20230102_105607 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img7" src="docs/assets/images/IMG_20230104_104738 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img8" src="docs/assets/images/IMG_20230113_093832 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img9" src="docs/assets/images/IMG_20230113_093947 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img10" src="docs/assets/images/IMG_20230113_155354 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img11" src="docs/assets/images/IMG_20230118_112253 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img12" src="docs/assets/images/IMG_20230203_094833 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img13" src="docs/assets/images/IMG_20230203_094853 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img14" src="docs/assets/images/IMG_20230213_135857 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img15" src="docs/assets/images/IMG_20230220_132926 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img16" src="docs/assets/images/IMG_20230309_104648 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
+  <img onclick="zoomIn(this.src)" id="img17" src="docs/assets/images/IMG_20230309_104658 - Copy.jpg" class="img-fluid rounded" alt="image" width="425" height="auto" data-bs-toggle="modal" data-bs-target="#myModal">
 </div>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      
+        <img id="modalImage" class="img-fluid">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" id="topright"></button>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Video Modal -->
+<div class="modal fade" id="myVideoModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+        <video id="modalVideo" class="img-fluid" controls></video>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" id="topright" onclick="pause()"></button>
+
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html> 
