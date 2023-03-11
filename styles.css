@@ -52,6 +52,15 @@ div.video {
     position: relative;
   }
 
+#testImg {
+  max-height: 95%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* #img1 {
   object-fit: contain;
   width: 100%;
