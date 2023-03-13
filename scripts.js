@@ -9,3 +9,9 @@ function zoomVideo(vid_src){
 function zoomTest(test_src){
     document.getElementById("testImg").src=test_src
 }
+
+function stopVideo(){
+    var vid = document.getElementById("modalVideo")
+    vid.pause()
+    vid.currentTime = 0
+}
