@@ -34,6 +34,7 @@ img {
 
 #modalVideo {
   cursor:default;
+  max-height: 95%;
 }
 
 #topright {
@@ -41,20 +42,6 @@ img {
     top: 8px;
     right: 16px;
     font-size: 2rem;
-  }
-
-.thumb {
-    position: absolute;
-    top: 40%; left: 50%;
-    transform: translate(-40%,-50%);
-    width: 15%;
-    height: auto;
-    opacity: 50%;
-}
-
-div.video {
-    display: inline-block;
-    position: relative;
   }
 
 #testImg {
@@ -66,6 +53,36 @@ div.video {
   margin-right: auto;
   max-width: 100%;
   
+}
+
+.alignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: beige;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e9e9af;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+a:active {
+  text-decoration: none;
+  color: #dddd88;
+  text-shadow: 0px 0px 5px #000000;
 }
 
 /* #img1 {
