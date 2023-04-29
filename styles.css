@@ -1,7 +1,6 @@
 body {
-    background: url(docs/assets/images/bg.jpg), url(docs/assets/images/bg2.jpg), url(docs/assets/images/bg3.jpg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-color: rgb(191, 123, 59);
+    background: url(docs/assets/images/bg2.jpg);
+    background-color: rgb(95, 132, 161);
 }
 
 video {
