@@ -17,9 +17,14 @@
 <div class="modal fade" id="testModal">
   <div class="modal-dialog modal-fullscreen" style="width: auto;display: flex;justify-content: center;align-items: center;">
   <div class="modal-content" style="width: auto;display: flex;justify-content: center;align-items: center;">
+      <span id="testIndex" style="display:none"></span>
+      <span id="numbtxt" class="numbertext"></span>
       <img id="testImg" alt="missing image">
       <span id="testTitle"></span>
+      <!-- <p id="testIndex" class="testnumber"></p> -->
       <button class="button-close btn-sq" type="button" data-bs-dismiss="modal">X</button>
+      <button id="prev" class="button-close btn-sq" type="button" style="left:0" onclick="plusImages(-1)"><</button>
+      <button id="nxt" class="button-close btn-sq" type="button" style="left:60px" onclick="plusImages(1)">></button>
   </div>
   </div>
 </div>
