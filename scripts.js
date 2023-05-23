@@ -50,7 +50,8 @@ function stopVideo(){
   }
 
 
-// function resetButtons(){
-//     document.getElementById("prev").disabled = false;
-//     document.getElementById("nxt").disabled = false;
-// }
+
+  document.addEventListener('keydown', function (e) {
+    if(e.key === "ArrowLeft"){ plusImages(-1); }    //for left arrow
+    if(e.key === "ArrowRight"){ plusImages(1) }     //for right arrow
+});

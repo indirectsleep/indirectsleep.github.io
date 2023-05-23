@@ -88,7 +88,7 @@ img {
   position: absolute;
   bottom: 3%;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.667);
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -102,7 +102,7 @@ img {
   position: absolute;
   bottom: 3%;
   right: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.75);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -120,6 +120,7 @@ button:disabled {
   background-color: rgba(255, 255, 255, 0.1);
   font-weight: bold;
   font-size: 2rem;
+  display: none;
 }
 
 button:disabled:hover {
@@ -135,6 +136,7 @@ button:disabled:hover {
   background-color: rgba(255, 255, 255, 0.1);
   font-weight: bold;
   font-size: 2rem;
+  display: none;
 }
 
 .alignCenter {
