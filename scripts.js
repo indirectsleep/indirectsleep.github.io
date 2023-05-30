@@ -2,8 +2,16 @@ function zoomTest(test_src,test_title,test_id){
     document.getElementById("prev").disabled = false;
     document.getElementById("nxt").disabled = false;
 
-    document.getElementById("testImg").src=test_src
-    document.getElementById("testTitle").innerHTML = test_title
+
+    let slice = test_src.slice(-29, -10);
+    let path = "docs/assets/images/";
+    let ext = ".jpg";
+    let full_size_src = path.concat("", slice, "", ext);
+
+
+
+    document.getElementById("testImg").src=full_size_src;
+    document.getElementById("testTitle").innerHTML = test_title;
 
     var num = test_id.match(/\d/g);
     num = num.join("");
